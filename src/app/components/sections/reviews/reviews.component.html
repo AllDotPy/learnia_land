@@ -1,0 +1,412 @@
+<!-- <div id="reviews" class="h-24"></div> -->
+
+<section id="{{!isMobile()?'reviews': 'reviews-'}}"
+    class="container mx-auto">
+
+    <div class="
+        flex flex-col py-4
+        container- mx-4 md:mx-auto mt-16
+        rounded-2xl overflow-x-clip">
+
+        <!-- HEADING -->
+        <h3
+            class="text-anim mt-24
+            text-accent text-center
+            justify-center text-4xl
+            font-quicksand font-bold
+            mx-4 md:my-0
+            md:text-5xl">
+            Que disent nos <span class="text-primary_dark">Utilisateurs</span>?
+        </h3>
+
+        <div class="
+            hidden w-0 md:flex md:w-max
+            flex-row- mt-24 space-x-12"
+            *ngIf="!isMobile()">
+            <!-- REVIEW 1 -->
+            <div class="
+                review flex flex-col w-[32rem!important] h-[50vh] rounded-3xl bg-lightDark space-y-12 p-8 items-center justify-center">
+                <!-- REVIEW STARS -->
+                <div class="flex flex-row justify-left items-center space-x-2">
+                    <!-- STAR 1 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 2 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 3 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 4 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 5 -->
+                    <svg class="w-8 h-8 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+                </div>
+
+                <!-- REVIEW COMMENT -->
+                <p class="text-accent text-center text-lg font-quicksand">
+                    &QUOT; Learnia m'a aidée à mieux comprendre mes cours de maths.
+                    Les explications sont claires et adaptées à mon niveau. Merci ! &QUOT;
+                </p>
+
+                <!-- USER -->
+                <div class="flex flex-row justify-center items-center space-x-4 w-full">
+                    <div class="rounded-full h-16 w-16 overflow-hidden- p-[2px]">
+                        <img src="../assets/images/users/messages-1.jpg" class="w-full rounded-full" alt="USER"/>
+                    </div>
+
+                    <!-- TEXT -->
+                    <div class="flex flex-col space-y-1">
+                        <h5 class="text-xl font-quicksand text-light">Sarah T.</h5>
+                        <p class="text-xs text-light">@sarah_vi</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REVIEW 2 -->
+            <div class="
+                review flex flex-col w-[32rem!important] h-[50vh] rounded-3xl bg-lightDark space-y-12 p-8 items-center justify-center">
+                <!-- REVIEW STARS -->
+                <div class="flex flex-row justify-left items-center space-x-2">
+                    <!-- STAR 1 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 2 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 3 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 4 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 5 -->
+                    <svg class="w-8 h-8 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+                </div>
+
+                <!-- REVIEW COMMENT -->
+                <p class="text-accent text-center text-lg font-quicksand">
+                    &QUOT; Grâce à Learnia, j'ai pu améliorer mes notes en physique.
+                    Les exercices personnalisés sont super utiles. &QUOT;
+                </p>
+
+                <!-- USER -->
+                <div class="flex flex-row justify-center items-center space-x-4 w-full">
+                    <div class="rounded-full h-16 w-16 overflow-hidden- p-[2px]">
+                        <img src="../assets/images/users/messages-3.jpg" class="w-full rounded-full" alt="USER"/>
+                    </div>
+
+                    <!-- TEXT -->
+                    <div class="flex flex-col space-y-1">
+                        <h5 class="text-xl font-quicksand text-light">Koffi Boris</h5>
+                        <p class="text-xs text-light">@bobo228</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REVIEW 3 -->
+            <div class="
+                review flex flex-col w-[32rem!important] h-[50vh] rounded-3xl bg-lightDark space-y-12 p-8 items-center justify-center">
+                <!-- REVIEW STARS -->
+                <div class="flex flex-row justify-left items-center space-x-2">
+                    <!-- STAR 1 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 2 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 3 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 4 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 5 -->
+                    <svg class="w-8 h-8 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+                </div>
+
+                <!-- REVIEW COMMENT -->
+                <p class="text-accent text-center text-lg font-quicksand">
+                    &QUOT; L'IA de Learnia est incroyable ! Elle m'aide à traduire
+                    mes textes en un clin d'œil. Très pratique pour mes cours de langue. &QUOT;
+                </p>
+
+                <!-- USER -->
+                <div class="flex flex-row justify-center items-center space-x-4 w-full">
+                    <div class="rounded-full h-16 w-16 overflow-hidden- p-[2px]">
+                        <img src="../assets/images/users/messages-2.jpg" class="w-full rounded-full" alt="USER"/>
+                    </div>
+
+                    <!-- TEXT -->
+                    <div class="flex flex-col space-y-1">
+                        <h5 class="text-xl font-quicksand text-light">Amina Bah</h5>
+                        <p class="text-xs text-light">@aminatou</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REVIEW 4 -->
+            <div class="
+                review flex flex-col w-[32rem!important] h-[50vh] rounded-3xl bg-lightDark space-y-12 p-8 items-center justify-center">
+                <!-- REVIEW STARS -->
+                <div class="flex flex-row justify-left items-center space-x-2">
+                    <!-- STAR 1 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 2 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 3 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 4 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 5 -->
+                    <svg class="w-8 h-8 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+                </div>
+
+                <!-- REVIEW COMMENT -->
+                <p class="text-accent text-center text-lg font-quicksand">
+                    &QUOT; J'adore l'interface de Learnia. Simple à utiliser et très
+                    efficace pour réviser mes cours. Je recommande à tous mes amis. &QUOT;
+                </p>
+
+                <!-- USER -->
+                <div class="flex flex-row justify-center items-center space-x-4 w-full">
+                    <div class="rounded-full h-16 w-16 overflow-hidden- p-[2px]">
+                        <img src="../assets/images/users/messages-2.jpg" class="w-full rounded-full" alt="USER"/>
+                    </div>
+
+                    <!-- TEXT -->
+                    <div class="flex flex-col space-y-1">
+                        <h5 class="text-xl font-quicksand text-light">Mamadou A.</h5>
+                        <p class="text-xs text-light">@raoniss</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REVIEW 5 -->
+            <div class="
+                review flex flex-col w-[32rem!important] h-[50vh] rounded-3xl bg-lightDark space-y-12 p-8 items-center justify-center">
+                <!-- REVIEW STARS -->
+                <div class="flex flex-row justify-left items-center space-x-2">
+                    <!-- STAR 1 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 2 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 3 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 4 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 5 -->
+                    <svg class="w-8 h-8 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+                </div>
+
+                <!-- REVIEW COMMENT -->
+                <p class="text-accent text-center text-lg font-quicksand">
+                    &QUOT; Les résumés de documents sur Learnia sont top !
+                    Ils me permettent de réviser rapidement avant les examens. &QUOT;
+                </p>
+
+                <!-- USER -->
+                <div class="flex flex-row justify-center items-center space-x-4 w-full">
+                    <div class="rounded-full h-16 w-16 overflow-hidden- p-[2px]">
+                        <img src="../assets/images/users/messages-2.jpg" class="w-full rounded-full" alt="USER"/>
+                    </div>
+
+                    <!-- TEXT -->
+                    <div class="flex flex-col space-y-1">
+                        <h5 class="text-xl font-quicksand text-light">Julie C.</h5>
+                        <p class="text-xs text-light">@queen_Juju</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STATIC FOR MOBILE -->
+        <div class="flex flex-col space-y-8 w-full mt-12"
+            *ngIf="isMobile()">
+            <!-- REVIEW 1 -->
+            <div class="
+                flex flex-col w-full h-[50vh]
+                rounded-3xl bg-lightDark
+                space-y-12 p-8 items-center
+                justify-center">
+
+                <!-- REVIEW STARS -->
+                <div class="flex flex-row justify-left items-center space-x-2">
+                    <!-- STAR 1 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 2 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 3 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 4 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 5 -->
+                    <svg class="w-8 h-8 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+                </div>
+
+                <!-- REVIEW COMMENT -->
+                <p class="text-accent text-center text-lg font-quicksand">
+                    &QUOT; Learnia m'a aidée à mieux comprendre mes cours de maths.
+                    Les explications sont claires et adaptées à mon niveau. Merci ! &QUOT;
+                </p>
+
+                <!-- USER -->
+                <div class="flex flex-row justify-center items-center space-x-4 w-full">
+                    <div class="rounded-full h-16 w-16 overflow-hidden- p-[2px]">
+                        <img src="../assets/images/users/messages-1.jpg" class="w-full rounded-full" alt="USER"/>
+                    </div>
+
+                    <!-- TEXT -->
+                    <div class="flex flex-col space-y-1">
+                        <h5 class="text-xl font-quicksand text-light">Sarah T.</h5>
+                        <p class="text-xs text-light">@sarah_vi</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REVIEW 2 -->
+            <div class="
+                flex flex-col w-full h-[50vh]
+                rounded-3xl bg-lightDark
+                space-y-12 p-8 items-center
+                justify-center">
+
+                <!-- REVIEW STARS -->
+                <div class="flex flex-row justify-left items-center space-x-2">
+                    <!-- STAR 1 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 2 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 3 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 4 -->
+                    <svg class="w-8 h-8 text-primary_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+
+                    <!-- STAR 5 -->
+                    <svg class="w-8 h-8 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/>
+                    </svg>
+                </div>
+
+                <!-- REVIEW COMMENT -->
+                <p class="text-accent text-center text-lg font-quicksand">
+                    &QUOT; Grâce à Learnia, j'ai pu améliorer mes notes en physique.
+                    Les exercices personnalisés sont super utiles. &QUOT;
+                </p>
+
+                <!-- USER -->
+                <div class="flex flex-row justify-center items-center space-x-4 w-full">
+                    <div class="rounded-full h-16 w-16 overflow-hidden- p-[2px]">
+                        <img src="../assets/images/users/messages-3.jpg" class="w-full rounded-full" alt="USER"/>
+                    </div>
+
+                    <!-- TEXT -->
+                    <div class="flex flex-col space-y-1">
+                        <h5 class="text-xl font-quicksand text-light">Koffi Boris</h5>
+                        <p class="text-xs text-light">@bobo228</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LEFT MASK -->
+    <div class="hidden
+        absolute -bottom-14 left-0 h-[38rem]
+        bg-gradient-to-r md:block
+        from-dark from-30%
+        to-transparent to-95% w-48">
+    </div>
+
+    <!-- RIGHT MASK -->
+    <div class="hidden
+        absolute -bottom-14 right-0 h-[38rem]
+        bg-gradient-to-r md:block
+        from-transparent from-0%
+        to-dark to-55% w-48">
+    </div>
+</section>

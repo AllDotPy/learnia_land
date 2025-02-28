@@ -1,0 +1,48 @@
+<!-- FEACTURES SECTION -->
+<section id="stats"
+    class=" container
+    flex flex-col
+    justify-center
+    items-center
+    mx-4- md:mx-auto mt-12
+    bg-primary_light-
+    text-white pt-16
+    md:flex-row-">
+
+    <!-- HEADING -->
+    <h3
+        class="text-anim
+        text-accent text-center
+        justify-center text-4xl
+        font-quicksand font-bold
+        mx-4 md:my-0
+        md:text-5xl">
+        Disponibilité de <span class="text-primary_dark">Learnia</span>
+    </h3>
+
+    <p class="text-light reveal text-center mt-8 w-[90%] md:w-[70%] text-lg">
+        Learnia est actuellement disponible au Togo et prépare son
+        expansion vers d'autres pays francophones d'Afrique de l'Ouest.
+        Restez informé et soyez parmi les premiers à profiter de nos
+        services dans votre région !
+    </p>
+
+    <div class="grid grid-cols-2 md:grid-cols-6 gap-4 container mx-auto h-fit md:h-56 rounded-lg bg-lightDark- p-8 mt-12">
+        <div class="space-y-4 reveal
+            flex flex-col h-56 w-full
+            rounded-lg bg-lightDark md:h-full
+            justify-center items-center"
+            *ngFor="let country of countries">
+
+            <!-- COUNTRY FLAG -->
+            <img src="{{country.flag}}"
+            alt="{{country.name}}"
+            class="h-10 w-auto rounded-[4px]">
+
+            <!-- CROUNTRY NAME -->
+            <p class="text-light text-lg leading-none text-center">
+                {{country.name}} ({{country.zip}})
+            </p>
+        </div>
+    </div>
+</section>

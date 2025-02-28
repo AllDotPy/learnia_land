@@ -1,0 +1,27 @@
+<!-- OTHER FEACTURES SECTION -->
+<section id="otherfeactures"
+    class=" container
+    flex flex-col
+    justify-center
+    items-center
+    mx-4- md:mx-auto -mt-12
+    bg-primary_light-
+    text-white pt-16
+    md:flex-row-">
+
+    <!-- HEADING -->
+    <h3
+        class="text-anim
+        text-accent text-center
+        justify-center text-3xl
+        font-quicksand font-bold
+        mx-4 md:my-0
+        md:text-3xl">
+        Quelques Fonctionnalités de <span class="text-primary_dark">Learnia</span>
+    </h3>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 w-full p-4 mt-16">
+        <app-feacture-card *ngFor="let feature of features" [feature]="feature"></app-feacture-card>
+
+    </div>
+</section>

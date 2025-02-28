@@ -1,0 +1,33 @@
+<li class *ngIf="!is_mobile">
+    <a href="{{link}}"
+        class="
+        nav-link font-inter leading-none
+        text-light no-underline
+        hover:text-light hover:bg-lightDark text-lg
+        rounded-full px-3 py-2.5
+        font-extrabold font-quicksand"
+        [ngClass]="{'text-light- bg-gradient-to-r from-purple-500 from-30% to-primary_light to-95%': active}">
+        {{title}}
+    </a>
+</li>
+
+<!-- HOME -->
+<a href="{{link}}"
+    *ngIf="is_mobile"
+    class="
+    flex items-center rounded-sm
+    font-orbitron w-full p-3 space-x-4
+    text-accent no-underline bg-dark
+    hover:bg-gradient-to-r from-purple-500
+    from-30% to-primary_light to-95%
+    hover:text-primary text-lg"
+    [ngClass]="
+        {
+            'text-light- bg-gradient-to-r from-purple-500 from-30% to-primary_light to-95%': active,
+
+        }">
+    <i
+        class="hgi-stroke hgi-home-04 font-bold text-2xl"></i>
+    <!-- TITLE -->
+    <p>{{title}}</p>
+</a>

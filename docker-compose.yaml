@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+
+  frontend:
+    build:
+      context: ./olffront
+    ports:
+      - "4200:4200"
+    depends_on:
+      - backend
+
+#   nginx:
+#     build: ./nginx
+#     volumes:
+#       - static:/static
+#     #   - /etc/letsencrypt/live/mes-fans.com/fullchain.pem:/etc/nginx/ssl-certificates/fullchain.pem
+#     #   - /etc/letsencrypt/live/mes-fans.com/privkey.pem:/etc/nginx/ssl-certificates/privkey.pem
+#     #   - /root/certificates/ca.pem:/etc/nginx/ssl-certificates/ca.pem
+#     ports:
+#       - '80:80'
+#       - '443:443'
+#     dns:
+#       - 8.8.8.8
+#     depends_on:
+#       - backend
+#       - frontend
+
+  # redis:
+  #   restart: unless-stopped
+  #   image: redis:7.0.5-alpine
+  #   expose:
+  #     - 6379
+    # ports:
+    #   - '6379:6379'
+
+volumes:
+  static:

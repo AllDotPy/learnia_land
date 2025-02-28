@@ -1,0 +1,231 @@
+<!-- NAVIGATION -->
+<nav id = "header"
+    class="
+        sticky top-0 w-full p-6 z-50
+        bg-dark backdrop-blur-3xl
+        border-b- border-secondary-
+        shadow-lg- transition-shadow">
+
+    <div class="w-full container mx-auto">
+        <div class="flex items-center justify-between">
+
+            <!-- LOGO -->
+            <div class="hidden pt-2 md:block">
+                <img
+                    class="h-10"
+                    alt
+                    src="../assets/icons/logos/Learnia_gradient_text.png">
+            </div>
+
+            <!-- MOBILE LOGO -->
+            <div class="pt-2 md:hidden">
+                <img
+                    class="h-12"
+                    alt
+                    src="../assets/icons/logos/ln_tx_bg_alpha_3000.png">
+            </div>
+
+            <!-- MENU -->
+            <div class="hidden items-center pt-0 md:flex">
+                <ul
+                    class="hidden flex-row items-center justify-center md:flex space-x-4">
+                    <!-- HOME -->
+                    <app-nav-link
+                        [link] = "'/home'"
+                        [title] = "'Accueil'">
+                    </app-nav-link>
+
+                    <!-- <li class>
+                        <a href="#hero"
+                            class="
+                            nav-link font-orbitron
+                            text-primary_dark no-underline
+                            hover:text-primary_dark
+                            font-light active
+                        ">Accueil</a>
+                    </li> -->
+
+                    <!-- FEACTURES -->
+                    <app-nav-link
+                        [link] = "'/home#feactures'"
+                        [title] = "'Fonctionnalités'">
+                    </app-nav-link>
+
+                    <!-- <li class>
+                        <a href="#feactures"
+                            class="
+                            nav-link font-orbitron
+                            text-gray-400 no-underline
+                            hover:text-primary_dark
+                            font-light
+                        ">Fonctionnalités</a>
+                    </li> -->
+
+                    <!-- SERVICES -->
+                    <app-nav-link
+                        [link] = "'/home#pricing'"
+                        [title] = "'Facturation'">
+                    </app-nav-link>
+
+                    <!-- <li class>
+                        <a href="#services"
+                            class="
+                            nav-link font-orbitron
+                            text-gray-400 no-underline
+                            hover:text-primary_dark
+                            font-light
+                        ">Facturation</a>
+                    </li> -->
+
+                    <!-- FAQ -->
+                    <app-nav-link
+                        [link] = "'/supports'"
+                        [title] = "'Support'">
+                    </app-nav-link>
+
+                    <!-- <li class>
+                        <a href="#faq"
+                            class="
+                        nav-link font-orbitron
+                        text-gray-400 no-underline
+                        hover:text-primary_dark
+                        font-light
+                        ">FAQ</a>
+                    </li> -->
+
+                    <!-- CONTACT -->
+                    <app-nav-link
+                        [link] = "'/contact'"
+                        [title] = "'Contact'">
+                    </app-nav-link>
+
+                    <!-- <li class>
+                        <a href="#"
+                            class="
+                        nav-link font-orbitron
+                        text-gray-400 no-underline
+                        hover:text-primary_dark
+                        font-light
+                    ">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+
+            <!-- LANGUAGE -->
+            <div class="flex flex-row space-x-0.5 items-center">
+                <!-- FRENCH -->
+                <a href
+                    class="hidden py-2 px-2 pt-2 ml-6
+                    font-orbitron
+                    text-primary_dark bg-transparent
+                    baseline md:block
+                    hover:text-primary
+                    font-light
+            ">Français</a>
+
+                <!-- FRENCH SM -->
+                <a href
+                    class="py-2 px-2 pt-2 ml-6
+                    font-orbitron
+                    text-primary_dark bg-transparent
+                    baseline font-light
+                    hover:primary_dark
+                    md:hidden
+            ">Fr</a>
+
+                <!-- VERTICAL SEPARATOR -->
+                <div class="w-0.5 h-4 bg-gray-400"></div>
+
+                <!-- ENGLISH -->
+                <a href
+                    class="hidden py-2 px-2 pt-2 ml-6
+                    font-orbitron
+                    text-light bg-transparent
+                    baseline text-sm md:block
+                    hover:primary_dark
+                    font-light
+            ">English</a>
+
+                <!-- ENGLISH SM -->
+                <a href
+                    class="py-2 px-2 pt-2 ml-6
+                    font-orbitron
+                    text-light bg-transparent
+                    baseline font-light
+                    hover:primary_dark
+                    md:hidden
+            ">En</a>
+            </div>
+
+            <!-- JOIN US BUTTON -->
+            <a href="/waitlist"
+                class="py-2.5 px-4 text-light rounded-full
+                bg-gradient-to-r from-purple-500
+                from-30% to-primary_light to-95%
+                text-lg font-bold hidden md:block">
+                Rejoindre la liste
+            </a>
+
+            <!-- HAMBURGER MENU BUTTON -->
+            <button id="menu-btn"
+                class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- MOBILE MENU -->
+        <div class="md:hidden sticky top-10 self-center z-50">
+            <ul id="menu"
+                class=" self-start
+                absolute flex-col items-start
+                self-center- py-8 mt-0 hidden
+                space-y-6 font-bold
+                w-auto px-10 z-50 rounded-b-md
+                bg-dark
+                left-6 right-6 drop-shadow-md">
+
+                <!-- HOME -->
+                <app-nav-link
+                    [link] = "'/home'"
+                    [title] = "'Accueil'"
+                    [is_mobile]="true"
+                    [ngClass]="'w-full'">
+                </app-nav-link>
+
+                <!-- FEACTURES -->
+                <app-nav-link
+                    [link] = "'/home#feactures'"
+                    [title] = "'Fonctionnalités'"
+                    [is_mobile]="true"
+                    [ngClass]="'w-full'">
+                </app-nav-link>
+
+                <!-- SERVICES -->
+                <app-nav-link
+                    [link] = "'/home#pricing'"
+                    [title] = "'Facturation'"
+                    [is_mobile]="true"
+                    [ngClass]="'w-full'">
+                </app-nav-link>
+
+                <!-- FAQ -->
+                <app-nav-link
+                    [link] = "'/supports'"
+                    [title] = "'Support'"
+                    [is_mobile]="true"
+                    [ngClass]="'w-full'">
+                </app-nav-link>
+
+                <!-- CONTACT -->
+                <app-nav-link
+                    [link] = "'/contact'"
+                    [title] = "'Contact'"
+                    [is_mobile]="true"
+                    [ngClass]="'w-full'">
+                </app-nav-link>
+            </ul>
+        </div>
+    </div>
+</nav>

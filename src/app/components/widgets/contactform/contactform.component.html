@@ -1,0 +1,167 @@
+<div class="
+    flex flex-col md:flex-row container
+    md:h-[80vh] mx-auto px-4 md:px-24 py-8
+    justify-center items-center overflow-y-auto
+    space-x-0 space-y-12 md:space-x-6 md:space-y-0">
+
+    <!-- Left CONTAINER -->
+    <div class="
+        flex flex-col w-full h-full- md:w-[40%]
+        p4 bg-neutral-800 rounded-3xl p-6 space-y-4">
+
+        <!-- TEXT -->
+        <p class="text-primary_dark text-sm w-full text-left">
+            PRENONS CONTACT
+        </p>
+
+        <!-- TITLE -->
+        <h3 class="text-3xl w-full text-light">
+            Discutons, Joignez-nous via ce formulaire.
+        </h3>
+
+        <!-- TEXT -->
+        <p class="text-light text-sm w-full text-left">
+            Avez-vous une question ou un commentaire ?
+            Nous sommes là pour vous aider. Envoyez-nous un message,
+            et nous vous répondrons dans les 24 heures.
+        </p>
+
+        <hr class="w-full h-[1px] bg-gray-400">
+
+        <div class="flex flex-col h-fit w-full space-y-2">
+            <!-- FIRST AND LAST NAME FIELDS -->
+            <div class="flex w-full space-x-4">
+
+                <!-- LAST NAME FIELD -->
+                <div class="flex flex-col w-full space-y-.5">
+                    <label for="first_name" class="text-left text-light text-xs p-1 justify-center rounded-xl">
+                        Vos Prénoms <span class="text-primary_dark text-lg">*</span>
+                    </label>
+                    <input
+                        type="text"
+                        name="first_name"
+                        id="first_name"
+                        formControlName = "code"
+                        placeholder = "Wilfried"
+                        class = "
+                            w-full h-12 pl-4 border-none
+                            rounded-md bg-dark
+                            dark:bg-dark_canvas text-light
+                            focus:outline-none
+                    ">
+                </div>
+
+                <!-- FIRST NAME FIELD -->
+                <div class="flex flex-col w-full space-y-.5">
+                    <label for="last_name" class="text-left text-light text-xs p-1 justify-center rounded-xl">
+                        Votre Nom <span class="text-primary_dark text-lg">*</span>
+                    </label>
+                    <input
+                        type="text"
+                        name="last_name"
+                        id="last_name"
+                        formControlName = "code"
+                        placeholder = "GOEH"
+                        class = "
+                            w-full h-12 pl-4 border-none
+                            rounded-md bg-dark
+                            dark:bg-dark_canvas text-light
+                            focus:outline-none
+                    ">
+                </div>
+            </div>
+
+            <!-- EMAIL FIELD -->
+            <div class="flex flex-col w-full space-y-.5">
+                <label for="email" class="text-left text-light text-xs p-1 justify-center rounded-xl">
+                    Votre Adresse électronique (e-mail) <span class="text-primary_dark text-lg">*</span>
+                </label>
+                <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    formControlName = "code"
+                    placeholder = "exemple@gmail.com"
+                    class = "
+                        w-full h-12 pl-4 border-none
+                        rounded-md bg-dark
+                        dark:bg-dark_canvas text-light
+                        focus:outline-none
+                ">
+            </div>
+
+            <!-- MESSAGE FIELD -->
+            <div class="flex flex-col w-full space-y-.5">
+                <label for="message" class="text-left text-light text-xs p-1 justify-center rounded-xl">
+                    Votre message <span class="text-primary_dark text-lg">*</span>
+                </label>
+                <textarea
+                    type="text"
+                    name="message"
+                    id="message"
+                    formControlName = "code"
+                    placeholder = "Votre message..."
+                    class = "
+                        w-full h-36 pl-4 border-none
+                        rounded-md bg-dark
+                        dark:bg-dark_canvas text-light
+                        focus:outline-none
+                "></textarea>
+            </div>
+        </div>
+
+        <!-- REGISTER BUTTON -->
+        <button type="button"
+            class="w-full bg-gradient-to-r
+            from-purple-500 from-30%
+            to-primary_light to-95% rounded-lg
+            text-light my-4 text-lg h-12">
+            Envoyer
+        </button>
+    </div>
+
+    <!-- RIGHT CONTAINER -->
+    <div class="
+        flex flex-col w-full md:h-[43rem]
+        md:w-[36%] p4 bg-lightDark- rounded-lg
+        justify-center items-start space-y-3">
+
+        <!-- IMAGE CONTAINER -->
+        <div class="
+            flex flex-col w-full md:w-[70%]- h-[58%]
+            p4 bg-neutral-900 rounded-3xl">
+
+        </div>
+
+        <!-- CONTACT ITEMS -->
+        <div class="
+            flex flex-col w-full md:w-[70%]- h-[42%]
+            p-3 bg-neutral-900 rounded-3xl space-y-2.5">
+
+            <!-- ITEM - 1 -->
+            <div class="
+                flex justify-start
+                items-center h-[32%] space-x-4
+                w-full rounded-2xl bg-dark p-2"
+                *ngFor="let contact of contacts">
+
+                <!-- ICON -->
+                <div class="
+                    flex h-14 w-14 bg-neutral-800
+                    rounded-full justify-center items-center">
+                    <i class="{{contact.icon}} text-light font-bold text-xl"></i>
+                </div>
+
+                <!-- Title -->
+                <div class="flex flex-col h-full justify-between p-2">
+                    <h3 class="text-lg font-bold text-light">
+                        {{contact.title}}
+                    </h3>
+                    <p class="text-sm text-light">
+                        {{contact.value}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
