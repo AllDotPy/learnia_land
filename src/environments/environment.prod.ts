@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  backendBaseUrl: "http://82.29.170.120",
+  backendBaseUrl: "http://api.learnia.alldotpy.com",
 };
