@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationService } from 'src/app/shared/services/navigation.service';
 import { PolicyService } from 'src/app/shared/services/policy.service';
 
 @Component({
@@ -9,9 +10,11 @@ import { PolicyService } from 'src/app/shared/services/policy.service';
 export class PolicyComponent {
 
     content: string = '### No **content** *yet!*'
+    title: string = 'Terms & Conditions'
 
     constructor(
-        private policiesService: PolicyService
+        private policiesService: PolicyService,
+        private navigationService: NavigationService
     ){}
 
     ngOnInit(): void {
@@ -25,9 +28,26 @@ export class PolicyComponent {
         this.policiesService.retrieve().subscribe(
             {
                 next: (data:any)=>{
-                    this.content = data.text
+                    this.getCurrentRouteContent(data)
                 },
                 error: (err:any)=>{}
+            }
+        )
+    }
+
+    // GET CURENT ROUTE FOR DISPLAYING THE RIGHT CONTENT
+    getCurrentRouteContent(data:any){
+        this.navigationService.getCurrentRoute().subscribe(
+            (route:string)=>{
+                console.log(route)
+                if(route.includes('terms')){
+                    this.content = data.terms
+                    this.title = 'Terms & Conditions'
+                }
+                else if(route.includes('policy')){
+                    this.content = data.policy
+                    this.title = 'Politiques de Confidentialité'
+                }
             }
         )
     }

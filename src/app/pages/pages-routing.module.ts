@@ -30,6 +30,10 @@ const routes: Routes = [
         component: PolicyComponent
     },
     {
+        path:'terms',
+        component: PolicyComponent
+    },
+    {
         path:'contact',
         component: ContactComponent
     },
